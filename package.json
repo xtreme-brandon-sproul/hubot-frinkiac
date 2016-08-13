@@ -1,14 +1,14 @@
 {
-  "name": "hubot-frinkiac",
+  "name": "hubot-morbotron",
   "version": "2.0.4",
-  "description": "Hubot plugin for searching for Simpsons screencaps on Frinkiac",
+  "description": "Hubot plugin for searching for Futurama screencaps on Morbotron",
   "main": "index.coffee",
   "author": "",
   "keywords": [
     "hubot",
     "hubot-scripts",
-    "frinkiac",
-    "simpsons",
+    "morbotron",
+    "futurama",
     "images"
   ],
   "license": "MIT",
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/okize/hubot-frinkiac.git"
+    "url": "git+https://github.com/okize/hubot-morbotron.git"
   },
   "bugs": {
-    "url": "https://github.com/okize/hubot-frinkiac/issues"
+    "url": "https://github.com/okize/hubot-morbotron/issues"
   },
-  "homepage": "https://github.com/okize/hubot-frinkiac#readme",
+  "homepage": "https://github.com/okize/hubot-morbotron#readme",
   "dependencies": {
     "axios": "^0.13.0",
     "coffee-script": "^1.9.0",

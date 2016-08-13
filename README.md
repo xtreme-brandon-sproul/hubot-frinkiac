@@ -1,48 +1,48 @@
-[![NPM version](http://img.shields.io/npm/v/hubot-frinkiac.svg?style=flat)](https://www.npmjs.org/package/hubot-frinkiac)
-[![Build Status](http://img.shields.io/travis/okize/hubot-frinkiac.svg?style=flat)](https://travis-ci.org/okize/hubot-frinkiac)
-[![Dependency Status](http://img.shields.io/david/okize/hubot-frinkiac.svg?style=flat)](https://david-dm.org/okize/hubot-frinkiac)
-[![Downloads](http://img.shields.io/npm/dm/hubot-frinkiac.svg?style=flat)](https://www.npmjs.org/package/hubot-frinkiac)
+[![NPM version](http://img.shields.io/npm/v/hubot-morbotron.svg?style=flat)](https://www.npmjs.org/package/hubot-morbotron)
+[![Build Status](http://img.shields.io/travis/okize/hubot-morbotron.svg?style=flat)](https://travis-ci.org/okize/hubot-morbotron)
+[![Dependency Status](http://img.shields.io/david/okize/hubot-morbotron.svg?style=flat)](https://david-dm.org/okize/hubot-morbotron)
+[![Downloads](http://img.shields.io/npm/dm/hubot-morbotron.svg?style=flat)](https://www.npmjs.org/package/hubot-morbotron)
 
-# hubot-frinkiac
+# hubot-morbotron
 
-Hubot plugin for searching for Simpsons screencaps on the amazing [Frinkiac](https://frinkiac.com/) search engine (check it out!).
+Hubot plugin for searching for futurama screencaps on the amazing [morbotron](https://morbotron.com/) search engine (check it out!).
 
-See [`src/frinkiac.coffee`](src/frinkiac.coffee) for full documentation.
+See [`src/morbotron.coffee`](src/morbotron.coffee) for full documentation.
 
 ## Installation
 
 In hubot project repo, run:
 
-`npm install hubot-frinkiac --save`
+`npm install hubot-morbotron --save`
 
-Then add **hubot-frinkiac** to your `external-scripts.json`:
+Then add **hubot-morbotron** to your `external-scripts.json`:
 
 ```json
 [
-  "hubot-frinkiac"
+  "hubot-morbotron"
 ]
 ```
 
 ## Sample Interaction
 
 ```
-user> hubot simpsons me You don't win friends with salad.
+user> hubot futurama me You don't win friends with salad.
 ```
 
-![Example 1](https://raw.github.com/okize/hubot-frinkiac/gh-pages/example1.jpg)
+![Example 1](https://raw.github.com/okize/hubot-morbotron/gh-pages/example1.jpg)
 
 Additionally, a second argument can be supplied (delineated by a pipe character) to override the image caption.
 
 ```
-user> hubot simpsons me You don't win friends with salad. | ♪ You don't win friends with salad! ♪
+user> hubot futurama me You don't win friends with salad. | ♪ You don't win friends with salad! ♪
 ```
 
-![Example 1](https://raw.github.com/okize/hubot-frinkiac/gh-pages/example2.jpg)
+![Example 1](https://raw.github.com/okize/hubot-morbotron/gh-pages/example2.jpg)
 
-There are also command aliases: `frinkiac` & `simpsons search`:
+There are also command aliases: `morbotron` & `futurama search`:
 
 ```
-user> hubot frinkiac Me fail English? That's unpossible.
+user> hubot morbotron Me fail English? That's unpossible.
 ```
 
-![Example 1](https://raw.github.com/okize/hubot-frinkiac/gh-pages/example3.jpg)
+![Example 1](https://raw.github.com/okize/hubot-morbotron/gh-pages/example3.jpg)

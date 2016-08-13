@@ -1,5 +1,5 @@
 # Description:
-#   Hubot plugin for searching for Simpsons screencaps on Frinkiac
+#   Hubot plugin for searching for futurama screencaps on morbotron
 #
 # Dependencies:
 #   axios
@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot simpsons me <query> | <caption override> - displays a screenshot from the simpsons related to your search
+#   hubot futurama me <query> | <caption override> - displays a screenshot from the futurama related to your search
 #
 # Notes:
 #   None
@@ -20,8 +20,8 @@ require('es6-promise').polyfill()
 axios = require('axios')
 
 getRequestConfig = (endpoint, params) ->
-  searchUrl = 'https://frinkiac.com/api/search'
-  captionUrl = 'https://frinkiac.com/api/caption'
+  searchUrl = 'https://morbotron.com/api/search'
+  captionUrl = 'https://morbotron.com/api/caption'
   url = if endpoint is 'search' then searchUrl else captionUrl
   return {
     method: 'get'
@@ -36,7 +36,7 @@ encode = (str) ->
 # we append '#.jpg' to url string because some chat clients (eg. hip chat)
 # will not exapand images if they don't end in an image extension
 getImageUrl = (episode, timestamp, caption) ->
-  "https://frinkiac.com/meme/#{episode}/#{timestamp}.jpg?lines=#{encode(caption)}#.jpg"
+  "https://morbotron.com/meme/#{episode}/#{timestamp}.jpg?lines=#{encode(caption)}#.jpg"
 
 getLongestWordLength = (words) ->
   longestWordLength = 0
@@ -82,7 +82,7 @@ combineCaptions = (captions) ->
     captions[0].Content
 
 module.exports = (robot) ->
-  robot.respond /(simpsons (search|me)|frinkiac) (.*)/i, (msg) ->
+  robot.respond /(futurama (search|me)|morbotron) (.*)/i, (msg) ->
     query = msg.match[3].split('|')
     customCaption = query[1]
 
